@@ -4,7 +4,7 @@
 #define BUILD_DIR "build/"
 
 void run(Nob_Cmd *cmd) {
-    nob_cmd_append(cmd, BUILD_DIR"syl");
+    nob_cmd_append(cmd, BUILD_DIR"sml");
     if (!nob_cmd_run_sync_and_reset(cmd))
       return;
 }
@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
     return 1;
 
   Nob_Cmd cmd = {0};
-  nob_cmd_append(&cmd, "cc", "-Wall", "-Wextra", "-o", BUILD_DIR"syl", "main.c",
+  nob_cmd_append(&cmd, "cc", "-Wall", "-Wextra", "-o", BUILD_DIR"sml", "main.c",
                  "matrix.c", "-lm");
 
   if (!nob_cmd_run_sync_and_reset(&cmd))

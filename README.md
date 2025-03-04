@@ -1,4 +1,4 @@
-# Syl : Simple Machine Learning
+# Sml : Simple Machine Learning
 this is a project for me to learn simple machine learning from the basics.
 ## Building
 for the first time building run the command below
